@@ -1,0 +1,25 @@
+.button {
+  padding: 4px 8px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #183d3d;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  &[data-fullWidth="true"] {
+    width: 100%;
+  }
+
+  &:hover {
+    border: 1px solid rgb(0, 0, 196);
+  }
+
+  &:active {
+    border: 1px solid rgb(0, 0, 131);
+  }
+
+  &:focus {
+    outline: rgb(0, 0, 197) solid 2px;
+  }
+}

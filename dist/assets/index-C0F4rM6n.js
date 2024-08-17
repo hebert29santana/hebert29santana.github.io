@@ -1,0 +1,1 @@
+import{r as a,j as r}from"./index-BM6nJJOe.js";const e="_button_8sc16_1",u={button:e},l=a.forwardRef(({fullWidth:o,...t},s)=>{const n=[u.button,t.className].filter(Boolean).join(" ");return r.jsx("button",{"data-fullWidth":o,className:n,...t,ref:s})});export{l as B};

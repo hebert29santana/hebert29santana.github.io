@@ -31,12 +31,6 @@ export default function Home() {
           dados importantes para a tomada de decisões relacionadas a inovação.
         </p>
         <p className="text-xs text-justify">
-          Esta calculadora analisa 31 indicadores, divididos em 9 dimensões, 6
-          pilares e 2 grupos. O resultado informado pela calculadora varia de 0
-          a 1, sendo 0 como pior nota e 1 como melhor nota. Essas notas são
-          transformadas em porcentagem de 0% até 100%.
-        </p>
-        <p className="text-xs text-justify">
           A CALMATI² foi desenvolvida seguindo a metodologia já utilizada pelo
           recém lançado Índice Brasil de Inovação e Desenvolvimento (IBID), que
           por sua vez tem como metodologia o Índice Global de Inovação (GII)
@@ -45,9 +39,10 @@ export default function Home() {
           em 132 países (IBID, 2024).
         </p>
         <p className="text-xs text-justify">
-          O resultado informado pela calculadora varia de 0 a 1, sendo 0 como
-          pior nota e 1 como melhor nota. Essas notas são transformadas em
-          porcentagem de 0% até 100%.
+          Esta calculadora analisa 31 indicadores, divididos em 9 dimensões, 6
+          pilares e 2 grupos. O resultado informado pela calculadora varia de 0
+          a 1, sendo 0 como pior nota e 1 como melhor nota. Essas notas são
+          transformadas em porcentagem de 0% até 100%.
         </p>
       </div>
       <Button

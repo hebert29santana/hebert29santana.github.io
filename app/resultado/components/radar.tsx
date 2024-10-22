@@ -14,9 +14,11 @@ type Props = {
     subject: string;
     A: number;
   }>;
+  color?: string;
+  fillOpacity?: number;
 };
 
-export const CustomRadarChart = ({ data }: Props) => {
+export const CustomRadarChart = ({ data, color, fillOpacity }: Props) => {
   const isMobile = useIsMobile();
   return (
     <RadarChart
@@ -28,15 +30,15 @@ export const CustomRadarChart = ({ data }: Props) => {
       data={data}
       compact
     >
-      <PolarGrid />
-      <PolarAngleAxis dataKey="subject" />
-      <PolarRadiusAxis angle={90} />
+      <PolarGrid fill={color} />
+      <PolarAngleAxis dataKey="subject" fill={color} />
+      <PolarRadiusAxis angle={90} fill={color} />
       <Radar
         name="Resultado"
         dataKey="A"
-        stroke="#8884d8"
-        fill="#8884d8"
-        fillOpacity={0.5}
+        stroke={color ?? "#8884d8"}
+        fill={color ?? "#8884d8"}
+        fillOpacity={fillOpacity ?? 0.5}
       />
     </RadarChart>
   );

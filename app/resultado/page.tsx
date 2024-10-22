@@ -126,7 +126,7 @@ export default function Home() {
 
   return (
     <section
-      className={`flex flex-col items-center justify-center gap-4 ${loadPdf ? "!text-slate-950" : "!text-slate-200"
+      className={`flex flex-col items-center justify-center gap-4 ${loadPdf ? "!text-[#000000]" : "!text-slate-200"
         } w-full max-w-screen-lg`}
       id="element-to-print"
     >
@@ -170,7 +170,7 @@ export default function Home() {
             {getNívelDeMaturidade()}%
           </h2>
         </div>
-        <CustomRadarChart data={data} />
+        <CustomRadarChart data={data} color={loadPdf ? "#000000" : "#8884d8"} fillOpacity={loadPdf ? 1 : 0.5} />
         <ResultTable loadPdf={loadPdf} />
         <div
           className="flex gap-4 mb-[-20px]"

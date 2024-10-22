@@ -170,7 +170,7 @@ export default function Home() {
             {getNívelDeMaturidade()}%
           </h2>
         </div>
-        <CustomRadarChart data={data} color={loadPdf ? "#000000" : "#8884d8"} fillOpacity={loadPdf ? 1 : 0.5} />
+        <CustomRadarChart data={data} color={"#8884d8"} fillOpacity={loadPdf ? 0.8 : 0.5} />
         <ResultTable loadPdf={loadPdf} />
         <div
           className="flex gap-4 mb-[-20px]"

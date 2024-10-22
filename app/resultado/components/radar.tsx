@@ -7,6 +7,7 @@ import {
   PolarGrid,
   PolarAngleAxis,
   PolarRadiusAxis,
+  Label
 } from "recharts";
 
 type Props = {
@@ -34,6 +35,7 @@ export const CustomRadarChart = ({ data, color, fillOpacity }: Props) => {
       <PolarAngleAxis dataKey="subject" fill={color} />
       <PolarRadiusAxis angle={90} fill={color} />
       <Radar
+        label={({ x, y, stroke, value }: React.ComponentProps<typeof Label>) => <Label value={value} x={x} y={y} stroke={stroke} fill={color ?? "#8884d8"} />}
         name="Resultado"
         dataKey="A"
         stroke={color ?? "#8884d8"}
